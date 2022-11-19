@@ -1,0 +1,58 @@
+<%- include('partials/header') %>
+
+    <!-- <h2>Submit your Assignment here</h2>
+    <p class="para">Please fill all the details carefully and then submit </p>
+
+    <form action="/submitassignment" method="POST" enctype="multipart/form-data">
+        <input type="text" placeholder="Enter your Name" name="name"><br>
+        <input type="text" placeholder="Enter your Roll Number" name="rollNo"><br>
+        <input type="file" name="assignments"> <br>
+        <button type="submit">Submit</button>
+    </form> -->
+
+
+    <div class="container mt-5">
+        <h1>Submit Your Assignment Here</h1>
+    
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="card">
+                    <div class="card-body">
+    
+                        <!-- Makes POST request to /register route -->
+                        <form action="/submitassignment" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="text">Name</label>
+                                <input type="text" class="form-control" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Roll Number</label>
+                                <input type="text" class="form-control" name="rollNo">
+                            </div>
+                            <div class="form-group">
+                                <label for="text">Subject Name</label>
+                                <input type="text" class="form-control" name="subjectName">
+                            </div>
+                            <div class="form-group">
+                                <label for="enrollment">Enrollment Number</label>
+                                <input type="text" class="form-control" name="enrollment">
+                            </div>
+                            <div class="form-group">
+                                <label for="semester">Current Semester</label>
+                                <input type="text" class="form-control" name="semester">
+                            </div>
+                            <div class="form-group">
+                                <label for="file">File</label>
+                                <input type="file" class="form-control-file" name="assignments">
+                            </div>
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </form>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
